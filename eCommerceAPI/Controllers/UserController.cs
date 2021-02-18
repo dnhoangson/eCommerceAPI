@@ -1,4 +1,5 @@
 ﻿using eCommerceAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -21,9 +22,15 @@ namespace eCommerceAPI.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] UserRegisterModel model)
         {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var existUser = await _userManager.FindByNameAsync(model.Username);
             if (existUser != null)
             {
@@ -44,6 +51,13 @@ namespace eCommerceAPI.Controllers
                 return StatusCode(500);
             }
             return Ok("User successfully created!");
+        }
+
+        [HttpGet]
+        [Route("Login")]
+        public async Task<IActionResult> Login()
+        {
+            throw new NotImplementedException();
         }
     }
 }
