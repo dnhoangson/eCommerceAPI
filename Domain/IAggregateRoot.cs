@@ -1,6 +1,6 @@
 ﻿namespace Domain
 {
-    internal interface IAggregateRoot : IEntity
+    public interface IAggregateRoot
     {
     }
 }
