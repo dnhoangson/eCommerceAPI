@@ -1,5 +1,5 @@
-﻿using eCommerce.Domain;
-using eCommerce.Domain.Interfaces;
+﻿using eCommerce.Domain.Entities;
+using eCommerce.Domain.Shared.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

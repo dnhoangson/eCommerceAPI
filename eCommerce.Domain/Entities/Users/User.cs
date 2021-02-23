@@ -1,16 +1,14 @@
-﻿using eCommerce.Domain.Users.ValueObjects;
-using System;
+﻿using eCommerce.Domain.Shared.Interfaces;
 
-namespace eCommerce.Domain.Users.Events
+namespace eCommerce.Domain.Entities.Users
 {
-    public class UserEvent
+    public class User : BaseEntity, IAggregateRoot
     {
-        public Guid Id { get; set; }
         public string UserIdentity { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public UserAddress Address { get; set; }
+        public string Address { get; set; }
         public string Avatar { get; set; }
     }
 }

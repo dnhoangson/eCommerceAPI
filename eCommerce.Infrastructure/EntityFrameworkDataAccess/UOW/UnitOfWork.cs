@@ -1,5 +1,5 @@
-﻿using eCommerce.Domain.Interfaces;
-using eCommerce.Domain.Users;
+﻿using eCommerce.ApplicationCore.Services;
+using eCommerce.Domain.Entities.Users;
 using System;
 using System.Threading.Tasks;
 

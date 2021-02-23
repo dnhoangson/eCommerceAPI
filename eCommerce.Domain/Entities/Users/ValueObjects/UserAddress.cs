@@ -1,4 +1,4 @@
-﻿namespace eCommerce.Domain.Users.ValueObjects
+﻿namespace eCommerce.Domain.Entities.Users.ValueObjects
 {
     public struct UserAddress
     {

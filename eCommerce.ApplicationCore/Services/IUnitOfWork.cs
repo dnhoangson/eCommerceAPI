@@ -1,8 +1,8 @@
-﻿using eCommerce.Domain.Users;
+﻿using eCommerce.Domain.Entities.Users;
 using System;
 using System.Threading.Tasks;
 
-namespace eCommerce.Domain.Interfaces
+namespace eCommerce.ApplicationCore.Services
 {
     public interface IUnitOfWork : IDisposable
     {

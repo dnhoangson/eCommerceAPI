@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace eCommerce.Domain.Interfaces
+namespace eCommerce.Domain.Shared.Interfaces
 {
     public interface IRepository<T> where T : IAggregateRoot
     {

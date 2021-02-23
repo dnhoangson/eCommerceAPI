@@ -1,4 +1,4 @@
-﻿using eCommerce.Domain.Users;
+﻿using eCommerce.Domain.Entities.Users;
 using Microsoft.EntityFrameworkCore;
 
 namespace eCommerce.Infrastructure.EntityFrameworkDataAccess

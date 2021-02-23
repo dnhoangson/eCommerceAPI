@@ -1,4 +1,4 @@
-﻿namespace eCommerce.Domain.Users
+﻿namespace eCommerce.Domain.Entities.Users
 {
     public interface IUserFactory
     {

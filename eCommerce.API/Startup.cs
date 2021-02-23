@@ -11,9 +11,9 @@ using System.Collections.Generic;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using eCommerce.Domain.Identity;
-using eCommerce.Domain.Interfaces;
 using eCommerce.Infrastructure.EntityFrameworkDataAccess.Repositories;
 using eCommerce.Infrastructure.EntityFrameworkDataAccess;
+using eCommerce.Domain.Shared.Interfaces;
 
 namespace eCommerce.API
 {

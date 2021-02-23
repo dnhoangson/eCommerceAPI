@@ -1,9 +1,9 @@
-﻿using eCommerce.Domain.Users.ValueObjects;
+﻿using eCommerce.Domain.Entities.Users.ValueObjects;
 using System;
 
-namespace eCommerce.Domain.Users.Commands
+namespace eCommerce.Domain.Entities.Users.Events
 {
-    public class UserCommand
+    public class UserEvent
     {
         public Guid Id { get; set; }
         public string UserIdentity { get; set; }

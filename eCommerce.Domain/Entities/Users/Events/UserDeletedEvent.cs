@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eCommerce.Domain.Users.Events
+namespace eCommerce.Domain.Entities.Users.Events
 {
     public class UserDeletedEvent : UserEvent
     {

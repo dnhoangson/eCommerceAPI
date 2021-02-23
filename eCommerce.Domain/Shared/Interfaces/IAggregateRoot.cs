@@ -1,4 +1,4 @@
-﻿namespace eCommerce.Domain.Interfaces
+﻿namespace eCommerce.Domain.Shared.Interfaces
 {
     public interface IAggregateRoot
     {

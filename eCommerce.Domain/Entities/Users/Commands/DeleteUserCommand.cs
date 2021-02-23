@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eCommerce.Domain.Users.Commands
+namespace eCommerce.Domain.Entities.Users.Commands
 {
     public class DeleteUserCommand : UserCommand
     {

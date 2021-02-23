@@ -9,10 +9,10 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using eCommerce.Domain.Users;
 using eCommerce.API.Models;
 using eCommerce.Domain.Identity;
-using eCommerce.Domain.Interfaces;
+using eCommerce.ApplicationCore.Services;
+using eCommerce.Domain.Entities.Users;
 
 namespace eCommerce.API.Controllers
 {
@@ -63,7 +63,8 @@ namespace eCommerce.API.Controllers
 
             var userData = new User
             {
-                UserIdentity = user.Id
+                UserIdentity = user.Id,
+                Email = user.Email,
             };
             await _unitOfWork.UserRepository.Add(userData);
             await _unitOfWork.Complete();

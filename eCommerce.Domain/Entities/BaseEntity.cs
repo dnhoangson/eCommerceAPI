@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eCommerce.Domain
+namespace eCommerce.Domain.Entities
 {
     public class BaseEntity
     {
